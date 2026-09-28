@@ -1,0 +1,16 @@
+[project]
+name = "minsumcomb"
+version = "1.0.0"
+description = "Dynamic-programming recurrence for minimum-sum combinations."
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP"]
+# argminsum deliberately shadows the built-in min for its number type.
+ignore = ["A001"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
