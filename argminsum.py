@@ -16,7 +16,7 @@ class argminsum:
         return argminsum(val, cnfg)
 
     def __str__(self):
-        return f'({self.val},{self.cnfg})'
+        return f"({self.val},{self.cnfg})"
 
     def __repr__(self):
         return str(self)
